@@ -1,6 +1,19 @@
 // ==== Challenge 1: Write your own closure ====
 // Write a simple closure of your own creation.  Keep it simple!
+let closureChecker = () => {
+  let randomNum = 123;
 
+  let testerFunction = () => {
+    let msg;
+    if (randomNum == 123) {
+      msg = "You can't hide from me!";
+    }
+    return msg;
+  }
+  console.log(testerFunction());
+}
+
+closureChecker();
 
 /* STRETCH PROBLEMS, Do not attempt until you have completed all previous tasks for today's project files */
 
@@ -9,6 +22,9 @@
 const counter = () => {
   // Return a function that when invoked increments and returns a counter variable.
 };
+
+
+
 // Example usage: const newCounter = counter();
 // newCounter(); // 1
 // newCounter(); // 2
